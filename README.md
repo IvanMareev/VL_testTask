@@ -1,76 +1,57 @@
-```type:Generated,lang:Markdown,path:,lines:0-0
-# Project Title
+# TODO app
 
-A brief description of what this project does and who it's for.
+  
 
-## Technologies and Libraries Used
+Краткое описание проекта
 
-This project is built using the following technologies and libraries:
+  
 
-- **React**: A JavaScript library for building user interfaces.
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
-- **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects.
-- **CSS Modules**: For styling components in a modular and reusable way.
+## Используемые технологии и библиотеки
 
-## Getting Started
+  
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Этот проект создан с использованием следующих технологий и библиотек:
 
-### Prerequisites
+  
 
-What things you need to install the software and how to install them:
+-  **React**: Библиотека JavaScript для создания пользовательских интерфейсов.
 
-node.js npm or yarn
+-  **TypeScript**: Типизированный надмножество JavaScript, который компилируется в обычный JavaScript.
 
+- **Vite**: Инструмент сборки, целью которого является обеспечение более быстрой и компактной разработки для современных веб-проектов.
 
-### Installing
+-  **Модули CSS**: Для модульного и повторно используемого оформления компонентов.
 
-A step by step series of examples that tell you how to get a development environment running:
+-  **Redux**: Стейт менеджер проекта.
 
-1. Clone the repository:
-
-git clone https://yourprojectrepository.com
+-  **React Router**:Библиотека для настройки маршрутизации.
+- **uuid**:Библиотека для создания уникальных id
 
 
-2. Navigate to the project directory:
+  
+  
 
-cd yourprojectdirectory
+## Начало работы
 
+  
 
-3. Install dependencies:
+Эти инструкции позволят вам запустить копию проекта на вашем локальном компьютере для целей разработки и тестирования.
 
-npm install
+  
 
-or
-yarn install
+### Что нужно установить перед началом работы
 
+- node.js
 
-4. Run the development server:
-
-npm run dev
-
-or
-yarn dev
+- npm или yarn
 
 
-This will serve your app at `http://localhost:3000` (or a different port if 3000 is busy).
+### Установка
 
-## Usage
+1. Клонируйте репозиторий(git clone https://github.com/IvanMareev/VL_testTask)
 
-Explain how to use your project. Include any relevant code examples or command line instructions here.
+2. зайдите в папку проекта (cd VL_tetsTask)
 
-## Contributing
+3. подтянине зависимости (npm i)
 
-Please read [CONTRIBUTING.md](LINK_TO_YOUR_CONTRIBUTING_GUIDELINES) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-Please replace placeholders like `https://yourprojectrepository.com`, `yourprojectdirectory`, and `LINK_TO_YOUR_CONTRIBUTING_GUIDELINES` with actual links and names relevant to your project. Also, feel free to adjust any section to better fit the specifics of your project or add any additional sections you think might be necessary.
+4. запустите проект (npm run dev)
