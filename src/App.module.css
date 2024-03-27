@@ -1,0 +1,47 @@
+.task_manager {
+    margin: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+
+}
+
+.task_manager__side_bar {
+    width: 20%;
+}
+
+.task_manager__side_bar>* {
+    margin-bottom: 10%;
+}
+
+button {
+    color: white;
+    font-size: medium;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    background-color: #1691d0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+option{
+    cursor: pointer;
+}
+.task_manager__TODO-list {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.task_manager__TODO-list>* {
+    margin: 0% 2%;
+}
+
+@media (max-width:320px) {
+    .task_manager__side_bar {
+        width: 100%;
+    }
+
+    .task_manager__TODO-list {
+        flex-direction: column;
+    }
+}

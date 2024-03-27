@@ -1,0 +1,40 @@
+.form {
+    border: solid lightgrey 2px;
+    padding: 10% 8%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.form > *{
+    margin: 4% 0;
+}
+.form__section {
+    
+    margin-bottom: 20px;
+    
+}
+
+.form__title {
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form__option {
+    margin-bottom: 5px;
+}
+
+.form__checkbox {
+    margin-right: 5px;
+}
+
+.form__option--selected {
+    color: blue;
+}
+
+@media (max-width:320px){
+    .form{
+        flex-direction: row;
+    }
+}

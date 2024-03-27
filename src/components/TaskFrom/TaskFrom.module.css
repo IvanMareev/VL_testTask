@@ -1,0 +1,67 @@
+.TaskForm {
+    background-color: white;
+    margin: 20px auto;
+    padding: 1%;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.TaskForm h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.TaskForm form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.TaskForm label {
+    margin-top: 10px;
+}
+
+.TaskForm input,
+.TaskForm textarea,
+.TaskForm select {
+    width: 100% - 12px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.TaskForm textarea {
+    width: calc(100% - 12px);
+    height: 15vh;
+}
+
+.TaskForm button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    width: auto;
+}
+
+.TaskForm button:hover {
+    background-color: #0056b3;
+}
+
+.TaskForm input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.selectTags {
+    overflow: hidden;
+}
+
+.TaskForm>* {
+    width: 96%;
+    margin: 5px 0;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
