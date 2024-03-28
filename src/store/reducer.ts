@@ -8,6 +8,18 @@ export const initialState: TasksState = {
   tasks: []
   , selectedTask: null
 };
+
+for (let i = 1; i <= 30; i++) {
+  const task: ITask = {
+    id: i.toString(),
+    title: `Task ${i}`,
+    description: "...",
+    createdAt: new Date(),
+    priority: Priority.NORMAL,
+    tags: [Tags.RESEARCH, Tags.DEVELOPMENT]
+  };
+  initialState.tasks.push(task);
+}
 const taskReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case ADD_TASK:
