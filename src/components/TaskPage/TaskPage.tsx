@@ -10,7 +10,6 @@ import { format } from 'date-fns';
 import { ru } from 'date-fns/locale';
 
 
-
 export function TaskPage() {
   const [isOpen, setIsopen] = useState(false)
   const { id } = useParams();
@@ -29,13 +28,11 @@ export function TaskPage() {
 
   return selectedTask && isOpen ? <TaskForm task={selectedTask} /> : (selectedTask && <div className={styles.TaskPage}>
     <div className={styles.task}>
-
       <div className={styles.panel}>
         <div>
-        <button  className={styles.backBTN} onClick={()=>nav('/')}>Назад</button>
-        <button onClick={() => setIsopen(true)}>Редактировать</button>
+          <button className={styles.backBTN} onClick={() => nav('/')}>Назад</button>
+          <button onClick={() => setIsopen(true)}>Редактировать</button>
         </div>
-        
         <button onClick={() => deleteThisTask()} className={styles.deleteBTN}>Удалить</button>
       </div>
 

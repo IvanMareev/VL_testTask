@@ -10,8 +10,6 @@ export function Filtering({ onFilteringChange }: FilteringProps) {
   const [selectedPriority, setSelectedPriority] = useState<Priority[]>([]);
   const [selectedTags, setSelectedTags] = useState<Tags[]>([]);
 
-
-
   const handleFilteringCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;
 
@@ -74,7 +72,7 @@ export function Filtering({ onFilteringChange }: FilteringProps) {
             {Priority.NORMAL}
           </label>
         </div>
-        <div className={`${styles.form__option} ${styles['form__option']}`}>
+        <div className={`${styles.form__option}`}>
           <label>
             <input
               className={styles.form__checkbox}

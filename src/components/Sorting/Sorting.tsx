@@ -5,8 +5,6 @@ import { ISort } from '../../types/global';
 
 export interface SortingProps {
   onSortChange: (type: ISort) => void;
-
-
 }
 
 export function Sorting({ onSortChange }: SortingProps) {
@@ -16,7 +14,7 @@ export function Sorting({ onSortChange }: SortingProps) {
   };
   return (
     <div className={styles.sorting}>
-      <h3 className={styles.priority__title}>сортировка</h3>
+      <h3 className={styles.priority__title}>СОРТИРОВКА</h3>
       <label className={styles.sorting__label}>
         <input
           type="radio"

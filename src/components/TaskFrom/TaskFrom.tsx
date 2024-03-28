@@ -13,7 +13,7 @@ export interface TaskFormProps {
 export function TaskForm({ task }: TaskFormProps) {
   const nav = useNavigate();
   const [isTouched, setIsTouched] = useState(false)
-  const [formError, setFormError] = useState<string>(''); // State for form error message
+  const [formError, setFormError] = useState<string>('');
   const dispatch = useDispatch();
   const [formData, setFormData] = useState<ITask>({
     id: task ? task.id : uuidv4(),
@@ -60,23 +60,18 @@ export function TaskForm({ task }: TaskFormProps) {
     }));
   };
 
-
-
-
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (!formData.title.trim() ) {
+  
+    if (!formData.title.trim()) {
       setFormError('У задачи обязательно должно быть название');
-    }
-    else if(!formData.description.trim()) {
-      setFormError('У задачи обязательно должно быть описание');
       return;
+    } else if (!formData.description.trim()) {
+      setFormError('У задачи обязательно должно быть описание');
+      return; 
     }
-    // Clear any previous form error messages
     setFormError('');
-
+  
     if (task) {
       dispatch(editTask(task.id, formData));
     } else {
@@ -84,6 +79,7 @@ export function TaskForm({ task }: TaskFormProps) {
     }
     nav("/");
   };
+  
 
 
   return (
@@ -94,20 +90,18 @@ export function TaskForm({ task }: TaskFormProps) {
         <label>Title:</label>
         <input
           type="text"
+          placeholder='Введите название вашей задачи'
           name="title"
           value={formData.title}
           onChange={handleChange}
         />
         {!formData.title.trim() && isTouched && <span className={styles.error}>{formError}</span>}
 
-
-
-
         <label>Priority:</label>
         <select
           name="priority"
           value={formData.priority}
-          onChange={handlePriorityChange} // Исправлено
+          onChange={handlePriorityChange}
         >
           {Object.values(Priority).map(priority => (
             <option key={priority} value={priority}>
@@ -133,13 +127,11 @@ export function TaskForm({ task }: TaskFormProps) {
         <label>Description:</label>
         <textarea
           name="description"
+          placeholder='Введите описание вашей задачи'
           value={formData.description}
           onChange={handleChange}
         />
-        {!formData.description.trim() && isTouched && <span className={styles.error}>{formError}</span>} {/* Hint for description */}
-        {/* {formError && <span className={styles.error}>{formError}</span>} */}
-
-
+        {!formData.description.trim() &&  <span className={styles.error}>{formError}</span>} 
         <button type="submit">{task ? 'Редактировать задачу' : 'Сохранить'}</button>
       </form>
     </div>

@@ -1,8 +1,6 @@
 import { createStore } from "redux";
 import taskReducer from "./reducer";
 
-
-
 const saveState = (state:any) => {
     try {
         const serializedState = JSON.stringify(state);

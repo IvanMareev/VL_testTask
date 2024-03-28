@@ -7,7 +7,6 @@ import store from './store/store';
 import styles from './App.module.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
 export default function App() {
   const [sortingType, setSortingType] = useState<ISort>(ISort.decreasing);
   const [filters, setFiltres] = useState<{ priority?: Priority[], tags?: Tags[] }>()

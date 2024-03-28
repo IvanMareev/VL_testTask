@@ -15,9 +15,7 @@
 .panel button {
     padding: 5px 10px;
     border: none;
-
     cursor: pointer;
-
     color: #fff;
 }
 
@@ -55,15 +53,18 @@
 .description {
     white-space: pre-line;
 }
-.deleteBTN{
+
+.deleteBTN {
     background-color: #e63636;
 }
-.deleteBTN:hover{
+
+.deleteBTN:hover {
     background-color: #932424;
 }
-.backBTN{
+
+.backBTN {
     margin-right: 0.9vw;
-    border: solid gray 1px ;
+    border: solid gray 1px;
     color: black;
     background-color: rgb(131, 129, 129);
 }

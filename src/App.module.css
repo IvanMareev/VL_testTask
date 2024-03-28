@@ -1,7 +1,7 @@
 .task_manager {
     margin: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
+    font-size: 1.7vh;
 
 }
 
@@ -23,9 +23,11 @@ button {
     border-radius: 7px;
     cursor: pointer;
 }
-option{
+
+option {
     cursor: pointer;
 }
+
 .task_manager__TODO-list {
     margin: 2%;
     display: flex;
@@ -34,6 +36,35 @@ option{
 
 .task_manager__TODO-list>* {
     margin: 0% 2%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1691d0;
+    background-clip: content-box;
+    padding: 3px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1691d0;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #1691d0;
+    background-color: #fff;
+}
+
+input[type="radio"]:checked {
+    background-color: #1691d0;
 }
 
 @media (max-width:320px) {

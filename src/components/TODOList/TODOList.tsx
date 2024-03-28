@@ -77,7 +77,7 @@ export function TODOList({ sortingType = ISort.increasing, filters }: TODOListPr
 
   return (
     <div className={styles.TODOList}>
-      <button onClick={() => navigate("add_task")}>Добавить задачу</button>
+      <button onClick={() => navigate("add_task")} className={styles.TODOList__btn}>Добавить задачу</button>
       {processedTasks.slice(0, tasksToShow).map((task: ITask, index) => (
         <div ref={index === processedTasks.length - 1 ? lastTaskRef : null} key={task.id}>
           <Link className={styles.link} to={`/tasks/${task.id}`}>

@@ -1,5 +1,4 @@
-// TemplateModal.js
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import styles from './TemplateModal.module.css';
 
 interface ModalType {
